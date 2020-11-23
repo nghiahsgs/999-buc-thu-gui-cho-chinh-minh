@@ -1,6 +1,6 @@
 from PyPDF2 import PdfFileWriter, PdfFileReader
 
-inputpdf = PdfFileReader(open("A Ghost in Love.pdf", "rb"))
+inputpdf = PdfFileReader(open("Goodbye,_Mr_Hollywood.PDF", "rb"))
 
 
 
