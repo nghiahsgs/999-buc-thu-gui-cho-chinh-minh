@@ -1,6 +1,6 @@
 from PyPDF2 import PdfFileWriter, PdfFileReader
 
-inputpdf = PdfFileReader(open("Goodbye,_Mr_Hollywood.PDF", "rb"))
+inputpdf = PdfFileReader(open("4000 english words volume 1-ebook.pdf", "rb"))
 
 
 
@@ -17,7 +17,7 @@ inputpdf = PdfFileReader(open("Goodbye,_Mr_Hollywood.PDF", "rb"))
 
 nb_day = 1
 page_start = 0
-page_end = page_start+3
+page_end = page_start+1 # moi trang 1 lan cat
 
 # list_page = [0,1,2,3,5]
 list_page = list(range(page_start,page_end))
@@ -29,10 +29,10 @@ with open("reading_day%s.pdf"%nb_day, "wb") as outputStream:
     output.write(outputStream)
 
 
-for nb_day in range(2,11):
+for nb_day in range(2,191):
     # nb_day = 3
     page_start = page_end
-    page_end = page_start+3
+    page_end = page_start+1 # moi trang 1 lan cat
 
     # list_page = [0,1,2,3,5]
     list_page = list(range(page_start,page_end))
